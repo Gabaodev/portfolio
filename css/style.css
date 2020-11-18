@@ -1,0 +1,514 @@
+
+body{
+    padding: 0;
+    margin: 0 ;
+    font-family: ubuntu;
+
+}
+/*-------------------------------#En tete de la page-----------------------------------------------*/
+.banniere{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,168,255,0.2),rgba(0,168,255,0.2) ), url(../assets/web-development-t.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.banniere header h1{
+    margin-top: 20px;
+    margin-left: 60px;
+    z-index: 2;
+
+}
+.vertical{
+    height: 100vh;
+    width: 130px;
+    background-color: rgba(0, 0, 0, 0.26);
+    position: absolute;
+    margin-left: 50px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+header nav{
+    margin-right: 50px;
+    
+}
+header nav a{
+    text-decoration: none;
+    margin: 0 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+header h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+header h1 span{
+    color: rgb(32, 87, 238);
+}
+
+.banniere .section_content{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    
+}
+
+.section_content h1{
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    margin-bottom: 0;
+}
+.section_content p{
+    font-size: 1.7rem;
+}
+.section_content .buttom a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 15px;
+    padding: 10px 10px;
+    background-color: rgb(32, 87, 238);
+    box-shadow: 3px 3px 0 0;
+
+}
+
+
+/*-------------------------------------------#A propos de moi-----------------------------------------------*/
+
+
+.a_propos{
+    height: 70vh;
+    width: 100%;
+    background-color:rgb(207, 207, 207) ;
+}
+
+.a_propos .contenu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    height: 350px;
+    width: 1200px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.contenu .portrait img{
+    height: 260px;
+    width: 210px;
+    margin-left: 20px;
+    margin-top: -30px;
+    
+}
+.contenu .portrait{
+    margin-left: 100px;
+    border: 10px solid rgb(32, 87, 238);
+    height: 250px;
+    width: 200px;
+
+}
+.contenu .bio{
+    height: 300px;
+    width: 700px;
+    margin-left: 100px;
+}
+
+.bio h1{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.bio h2{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.contenu .btn{
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+}
+.contenu .btn a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    background-color:rgb(32, 87, 238) ;
+    margin: 0 5px;
+}
+
+
+/*-------------------------------------------#Cempetences et skills-----------------------------------------------*/
+
+.competences{
+    height: auto;
+    width: 100%;
+}
+.competences h1{
+    text-align: center;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.services .box_services img{
+    height: 70px;
+    width: 70px;
+    
+}
+.services .box_services .picture{
+    text-align: center;
+}
+.services .box_services{
+    height: 280px;
+    width: 280px;
+    margin: 30px 10px;
+    padding: 10px 10px;
+    border-right: rgb(32, 87, 238) 5px solid;
+    border-bottom:rgb(32, 87, 238) 5px solid ;
+    
+}
+.services .box_services h1{
+    text-align: center;
+}
+
+.box_services a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    background-color:rgb(32, 87, 238) ;
+    
+}
+
+
+
+
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: ubuntu;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+.wrapper{
+    width: 500px;
+    
+}
+.wrapper2{
+    width: 500px;
+}
+.wrapper h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.wrapper h2{
+    text-align: left;
+    font-size: 1.3rem;
+}
+.wrapper2 h2{
+    text-align: left;
+    font-size: 1.3rem;
+}
+.wrapper span{
+    float: right;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.wrapper2 span{
+    float: right;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.line{
+    height: 10px;
+    min-width: 500px;
+    margin: 0 auto 10px;
+    line-height: 10px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+.line:before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 10px;
+    top: 0;
+    z-index: -2;
+    background: rgb(145, 170, 236);
+}
+
+.line:after{
+    content: '';
+    background: rgb(32, 87, 238);
+    height: 10px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.line1:after{
+    max-width: 90%;
+}
+.line2:after{
+    max-width: 80%;
+}
+.line3:after{
+    max-width: 35%;
+}
+.line4:after{
+    max-width: 30%;
+}
+.line5:after{
+    max-width: 20%;
+}
+.line6:after{
+    max-width: 85%;
+}
+
+
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------#Realisations-----------------------------------------------*/
+.projets{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(24, 88, 224);
+    text-align: center;
+}
+.projets h1{
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.projet_box{
+    position: relative;
+    height: auto;
+    width: 1000px;
+    
+}
+.cadre{
+    cursor: pointer;
+}
+.cadre1{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+.cadre2{
+    position: absolute;
+    left: 470px;
+    top: 50px;
+}
+.cadre3{
+    position: absolute;
+    left: 840px;
+    top: 50px;
+}
+.cadre4{
+    position: absolute;
+    left: 100px;
+    top: 250px;
+}
+.cadre5{
+    position: absolute;
+    left: 470px;
+    top: 250px;
+}
+.cadre6{
+    position: absolute;
+    left: 840px;
+    top: 250px;
+}
+.p_picture{
+    height: auto;
+    width: auto;
+}
+.p_picture img{
+    height: 170px;
+    width: 340px;
+}
+
+
+/*-------------------------------------------#Education et temoignage-----------------------------------------------*/
+
+/*-------------------------------------------#Contacte-----------------------------------------------*/
+.Contacte{
+    height: 90vh;
+    width: 100%;
+}
+.s_contact{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.map{
+    height: 100%;
+    width: 50%;
+    background-image: url(../assets/blur-close-up-code-546819-1-930x620.jpeg);
+
+}
+.form{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+.form div{
+    width: 500px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    
+
+}
+.form .mail{
+    top: 120px;
+}
+
+.form .tel{
+    top: 190px;
+}
+.form .message{
+    top: 320px;
+    
+}
+.form .envoi{
+    top: 450px;
+    font-size: 1rem;
+    font-family: ubuntu;
+    font-weight: normal;
+    letter-spacing: 2px;
+    width: 100px;
+    border: none;
+    background-color: rgb(24, 88, 224);
+    color: #fff;
+
+}
+
+.form input, textarea{
+    width: 100%;
+    padding: 20px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(24, 88, 224);
+    font-weight: normal;
+    font-size: 1.3rem;
+    font-family: ubuntu;
+    letter-spacing: 2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------#Footer - pied de la page-----------------------------------------------*/
+
+.footer{
+    width: 100%;
+    background-color:rgb(12, 40, 117) ;
+    height: 60px;
+    text-align: center;
+    
+   
+}
+.footer p{
+    margin: 0;
+    color: #fff;
+    font-family: ubuntu;
+    line-height: 60px;
+}
+
+
+
+
+
