@@ -1,8 +1,12 @@
 
+
 body{
     padding: 0;
     margin: 0 ;
+    position: relative;
     font-family: ubuntu;
+    box-sizing: border-box;
+
 
 }
 /*-------------------------------#En tete de la page-----------------------------------------------*/
@@ -28,6 +32,25 @@ body{
     position: absolute;
     margin-left: 50px;
 }
+.social{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.social a{
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.7s;
+}
+.social a:hover{
+    color: rgb(32, 87, 238);
+}
+
+
 header{
     display: flex;
     align-items: center;
@@ -45,6 +68,17 @@ header nav a{
     margin: 0 20px;
     text-transform: uppercase;
     color: #fff;
+    transition: 0.7s;
+}
+
+header nav a:hover{
+    color: rgb(32, 87, 238);
+    border-bottom: 4px solid;
+    padding-bottom: 17px;
+}
+
+header h1{
+    position: absolute;
 }
 header h1 a{
     text-decoration: none;
@@ -53,6 +87,7 @@ header h1 a{
 header h1 span{
     color: rgb(32, 87, 238);
 }
+
 
 .banniere .section_content{
     color: #fff;
@@ -79,6 +114,17 @@ header h1 span{
     padding: 10px 10px;
     background-color: rgb(32, 87, 238);
     box-shadow: 3px 3px 0 0;
+    transition: 0.7s;
+
+}
+.section_content .buttom a:hover{
+    text-decoration: none;
+    color: rgb(32, 87, 238);
+    text-transform: uppercase;
+    margin: 0 15px;
+    padding: 10px 10px;
+    background-color: #fff;
+    box-shadow: 3px 3px 0 0;
 
 }
 
@@ -89,7 +135,7 @@ header h1 span{
 .a_propos{
     height: 70vh;
     width: 100%;
-    background-color:rgb(207, 207, 207) ;
+    background-color: rgba(32, 87, 238, 0.637) ;
 }
 
 .a_propos .contenu{
@@ -101,10 +147,13 @@ header h1 span{
     top: 50%;
     transform: translate(-50%, -50%);
     position: relative;
-    height: 350px;
-    width: 1200px;
+    height: auto;
+    min-height: 350px;
+    width: 1100px;
+    min-width: auto;
     background-color: #fff;
-    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.65);
+
 }
 
 .contenu .portrait img{
@@ -115,7 +164,6 @@ header h1 span{
     
 }
 .contenu .portrait{
-    margin-left: 100px;
     border: 10px solid rgb(32, 87, 238);
     height: 250px;
     width: 200px;
@@ -124,12 +172,11 @@ header h1 span{
 .contenu .bio{
     height: 300px;
     width: 700px;
-    margin-left: 100px;
 }
 
 .bio h1{
     text-transform: capitalize;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .bio h2{
     text-transform: capitalize;
@@ -146,6 +193,16 @@ header h1 span{
     padding: 10px 10px;
     background-color:rgb(32, 87, 238) ;
     margin: 0 5px;
+    transition: 0.7s;
+}
+.contenu .btn a:hover{
+    text-decoration: none;
+    color: rgb(32, 87, 238);
+    padding: 10px 10px;
+    background-color: #fff;
+    margin: 0 5px;
+    box-shadow: 3px 3px 0 0;
+
 }
 
 
@@ -157,10 +214,12 @@ header h1 span{
 }
 .competences h1{
     text-align: center;
+    text-transform: uppercase;
 }
 .services{
+    cursor: pointer;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
@@ -173,16 +232,33 @@ header h1 span{
     text-align: center;
 }
 .services .box_services{
-    height: 280px;
-    width: 280px;
+    height: 300px;
+    width: 370px;
     margin: 30px 10px;
     padding: 10px 10px;
-    border-right: rgb(32, 87, 238) 5px solid;
-    border-bottom:rgb(32, 87, 238) 5px solid ;
-    
+    box-shadow: 0 5px 10px rgba(0,0,0,.65);
+    transition: 0.5s;
+}
+.services .box_services:hover{
+    height: 300px;
+    width: 370px;
+    margin: 30px 10px;
+    padding: 10px 10px;
+    box-shadow: 0 5px 10px rgba(32, 87, 238, 0.514);
 }
 .services .box_services h1{
     text-align: center;
+    text-transform: none;
+    margin-bottom: 0;
+    
+}
+.services .box_services h3{
+ text-align: center;
+ font-weight: 700;
+ font-size: 1rem;
+ color: #333;
+ margin-top: 0;
+    
 }
 
 .box_services a{
@@ -199,19 +275,25 @@ header h1 span{
 
 .skills{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     font-family: ubuntu;
     text-transform: uppercase;
     margin: 40px 0;
 }
 
+.wrapper, .wrapper2{
+    margin: 0 50px;
+}
 .wrapper{
-    width: 500px;
+    width: 450px;
+   
     
 }
 .wrapper2{
-    width: 500px;
+    width: 450px;
+    
 }
 .wrapper h1{
     text-align: center;
@@ -239,7 +321,7 @@ header h1 span{
 
 .line{
     height: 10px;
-    min-width: 500px;
+    min-width: 450px;
     margin: 0 auto 10px;
     line-height: 10px;
     font-size: 14px;
@@ -311,62 +393,110 @@ header h1 span{
 
 /*-------------------------------------------#Realisations-----------------------------------------------*/
 .projets{
-    height: 100vh;
     width: 100%;
-    background-color: rgb(24, 88, 224);
-    text-align: center;
+    height: auto;
+    min-height: 100vh;
+    background-color: rgba(32, 87, 238, 0.637);
 }
 .projets h1{
-    margin-top: 50px;
-    padding-top: 20px;
+    text-transform: uppercase;
+    padding-top: 40px;
 }
-.projet_box{
+.projets h1, .p{
+    text-align: center;
+}
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.single-blog{
+    flex-basis: 390px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.65);
+    margin: 10px 0;
+    background-color: #fff;
+    margin: 40px 0;
+
+}
+.blog-img{
     position: relative;
-    height: auto;
-    width: 1000px;
+    overflow: hidden;
+}
+.blog-img img{
+    width: 100%;
+    transition: .4s;
+}
+.single-blog:hover .blog-img img{
+    transform: scale(1.1);
+}
+.blog-img a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    background-color: rgb(32, 87, 238);
+    padding: 10px;
     
 }
-.cadre{
-    cursor: pointer;
+.blog-info{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    position: relative;
+    z-index: 2;
+    margin-top: -30px;
+    padding: 10px 5px;
+    background-color: #fff;
+    text-align: center;
 }
-.cadre1{
+.blog-info a{
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+.blog-content{
+    padding: 20px;
+}
+.blog-content h4{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.blog-content a{
+    background-color: rgb(32, 87, 238);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px ;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.blog-content a::before{
     position: absolute;
-    left: 100px;
-    top: 50px;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    background-color: #333;
+    content: "";
+    transition: .5s;
+    z-index: -1;
 }
-.cadre2{
-    position: absolute;
-    left: 470px;
-    top: 50px;
+.blog-content a:hover::before{
+    left: 0;
 }
-.cadre3{
-    position: absolute;
-    left: 840px;
-    top: 50px;
-}
-.cadre4{
-    position: absolute;
-    left: 100px;
-    top: 250px;
-}
-.cadre5{
-    position: absolute;
-    left: 470px;
-    top: 250px;
-}
-.cadre6{
-    position: absolute;
-    left: 840px;
-    top: 250px;
-}
-.p_picture{
-    height: auto;
-    width: auto;
-}
-.p_picture img{
-    height: 170px;
-    width: 340px;
-}
+
 
 
 /*-------------------------------------------#Education et temoignage-----------------------------------------------*/

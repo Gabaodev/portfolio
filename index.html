@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <title>Portfolio</title>
 </head>
 <body>
 
         <!------------------------------ #En tete de la page ------------------------------------>
         <section class="banniere">
-            <div class="vertical"></div>
+            <div class="vertical">
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i>
+                    <a href="#"><i class="fab fa-twitter"></i>
+                    <a href="#"><i class="fab fa-linkedin"></i>
+                    <a href="#"><i class="fab fa-github"></i>
+                </div>
+            </div>
             <header>
                 <h1><a href=""><span>SKY</span>GEEK</a></h1>
                 <nav class="navbar">
@@ -26,8 +33,8 @@
 
             </header>
 
-            <div class="section_content">
-                <h1>Mboumba Evans___</h1>
+            <div class="section_content" data-0-top="opacity:0;left:200px" data-200-top="opacity:1;left:0px" >
+                <h1 class="hh1">Mboumba Evans</h1>
                 <p>Developpeur web et web mobile</p>
                 <div class="buttom">
                     <a class="one" href="#">Contact </a>
@@ -39,10 +46,10 @@
 
         <!------------------------------ #A propos de moi ------------------------------------>
         <section class="a_propos">
-            <div class="contenu">
+            <div class="contenu" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
 
                         <div class="portrait">
-                            <img src="assets/70ee7f7dcd6285520476dd65f55bb9a7.jpg" alt="Une photo de moi">
+                            <img src="assets/3f9bbb14e2da2f74ddc144f2e21fd2a2.jpg" alt="Une photo de moi">
                         </div>
 
                         <div class="bio">
@@ -59,7 +66,7 @@
 
                         <div class="btn">
                             <a class="one" href="#">Contact </a>
-                            <a href="#">telecharger cv</a>
+                            <a href="#">Telecharger cv</a>
                         </div>
             </div>
         </section>
@@ -70,33 +77,30 @@
             <h1>mes services</h1>
             <div class="services">
                 <div class="box_services box1">
-                    <div class="picture"><img src="assets/aa.png" alt=""></div>
+                    <div class="picture"><img src="assets/023-coding-4.png" alt=""></div>
                     <h1>Developpement web</h1>
+                    <h3>Design, conception, deploiement et maintenance</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                      Natus amet assumenda rerum iure inventore impedit! Voluptate ullam id alias distinctio.</p>
                      <a href="#">En savoir +</a>
                 </div>
                 <div class="box_services box2">
-                    <div class="picture"><img src="assets/1184202.png" alt=""></div>
-                    <h1>Developpement web</h1>
+                    <div class="picture"><img src="assets/020-coding-6.png" alt=""></div>
+                    <h1>Developpement d'applications</h1>
+                    <h3>Application web et mobile</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                      Natus amet assumenda rerum iure inventore impedit! Voluptate ullam id alias distinctio.</p>
                      <a href="#">En savoir +</a>
                 </div>
                 <div class="box_services box3">
-                    <div class="picture"><img src="assets/aa.png" alt=""></div>
-                    <h1>Developpement web</h1>
+                    <div class="picture"><img src="assets/009-analytics-1.png" alt=""></div>
+                    <h1>Audit-conseil informatique</h1>
+                    <h3>Analyse de systeme informatique</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                      Natus amet assumenda rerum iure inventore impedit! Voluptate ullam id alias distinctio.</p>
                      <a href="#">En savoir +</a>
                 </div>
-                <div class="box_services box4">
-                    <div class="picture"><img src="assets/1184202.png" alt=""></div>
-                    <h1>Developpement web</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Natus amet assumenda rerum iure inventore impedit! Voluptate ullam id alias distinctio.</p>
-                     <a href="#">En savoir +</a>
-                </div>
+               
             </div>
 
         </section>
@@ -113,6 +117,8 @@
                     <div class="line line2"></div>
                     <h2>javascript<span>35%</span></h2>
                     <div class="line line3"></div>
+                    <h2>javascript<span>35%</span></h2>
+                    <div class="line line3"></div>
             
             
             
@@ -126,6 +132,8 @@
                     <div class="line line5"></div>
                     <h2>git/github<span>85%</span></h2>
                     <div class="line line6"></div>
+                    <h2>git/github<span>85%</span></h2>
+                    <div class="line line6"></div>
             
 
                 </div>
@@ -137,45 +145,59 @@
         <!------------------------------ #Realisations ------------------------------------>
         <section class="projets">
             <h1>Mes realisations</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor repudiandae mollitia, magni earum eum corrupti!</p>
-            <div class="projet_box">
-                <div class="cadre cadre1">
-                    <div class="p_picture">
-                        <img src="assets/projet2.PNG" alt="">
+            <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor repudiandae mollitia, magni earum eum corrupti!</p>
+            
+            <div class="blog">
+                <div class="single-blog">
+                    <div class="blog-img">
+                        <img src="assets/projet1.jpg" alt="">
+                        <a href="#">Site web</a>
                     </div>
-
-                </div>
-                <div class="cadre cadre2">
-                    <div class="p_picture">
-                        <img src="assets/projet1.PNG" alt="">
+                    <div class="blog-info">
+                        <a href="">Admin</a><a href="">Commentaire</a>
                     </div>
-
-                </div>
-                <div class="cadre cadre3">
-                    <div class="p_picture">
-                        <a href="#"></a>
-                        <img src="assets/projet2.PNG" alt="">
+                    <div class="blog-content">
+                        <h4>Space view</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Vero, doloremque sunt. Numquam totam eveniet vel alias
+                         aliquid at animi! Quis.</p>
+                        <a href="#">Visitez</a>
                     </div>
-
                 </div>
-                <div class="cadre cadre4">
-                    <div class="p_picture">
-                        <img src="assets/projet2.PNG" alt="">
+                <div class="single-blog">
+                    <div class="blog-img">
+                        <img src="assets/projet2.jpg" alt="">
+                        <a href="#">Site web / Applcation web</a>
                     </div>
-
-                </div>
-                <div class="cadre cadre5">
-                    <div class="p_picture">
-                        <img src="assets/projet1.PNG" alt="">
+                    <div class="blog-info">
+                        <a href="">Admin</a><a href="">Commentaire</a>
                     </div>
-
-                </div>
-                <div class="cadre cadre6">
-                    <div class="p_picture">
-                        <img src="assets/projet2.PNG" alt="">
+                    <div class="blog-content">
+                        <h4>Manitou</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Vero, doloremque sunt. Numquam totam eveniet vel alias
+                         aliquid at animi! Quis.</p>
+                        <a href="#">Visitez</a>
                     </div>
-
                 </div>
+                <div class="single-blog">
+                    <div class="blog-img">
+                        <img src="assets/projet3.jpg" alt="">
+                        <a href="#">Application mobile</a>
+                    </div>
+                    <div class="blog-info">
+                        <a href="">Admin</a><a href="">Commentaire</a>
+                    </div>
+                    <div class="blog-content">
+                        <h4>MyUssd</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Vero, doloremque sunt. Numquam totam eveniet vel alias
+                         aliquid at animi! Quis.</p>
+                        <a href="#">Visitez</a>
+                    </div>
+                </div>
+            
+                
             </div>
 
         </section>
@@ -226,7 +248,12 @@
 
         </footer>
 
+        <script src="skrollr.js"></script>
+        <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
         <script src="app.js"></script>
+        
     
 </body>
 </html>
